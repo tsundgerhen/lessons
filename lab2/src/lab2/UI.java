@@ -35,7 +35,7 @@ public class UI {
         int element, index;
         Scanner scanner = new Scanner(System.in);
         while(choice != 0) {
-        	System.out.println("1.Add element to list\n2.Add element to list by index\n3.remove a element from list\n4.Get a element from list\n5.Clear the list\n0.End\n");
+        	System.out.println("1.Add element to list\n2.Add element to list by index\n3.remove a element from list\n4.Get a element from list\n5.Clear the list\n6.Show list\n0.End\n");
         	choice = scanner.nextInt();
         	switch(choice) {
         	case 1:
@@ -70,6 +70,8 @@ public class UI {
         		newList.clear();
         		obj.displayList(newList);
         		break;
+        	case 6:
+        		obj.displayList(newList);
         	case 0: 
         		break;
         	default:
@@ -79,4 +81,5 @@ public class UI {
         }
         scanner.close();
     }
+    //2024.02.27
 }

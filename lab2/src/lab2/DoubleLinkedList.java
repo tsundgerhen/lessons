@@ -23,8 +23,7 @@ public class DoubleLinkedList<E> {
 	         throw new IndexOutOfBoundsException
 	             ("index = " + index + "  size = " + size);
 	}
-	// return element with specified index 
-	// when index between 0 and -1 it return indexOutOfBounsException
+	
 	public E get(int index) {
 		checkIndex(index);
 		DoubleNode<E> currentNode;
